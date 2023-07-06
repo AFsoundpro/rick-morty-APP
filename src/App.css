@@ -1,38 +1,265 @@
 .App {
-  text-align: center;
+   text-align: center;
+   background: url(../public/img/r&m1.0.jpg);
+   color: darkred;
+   height: 100vh;
+   background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   margin-top: 40px;
+   opacity: none;
+   justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*CODIGO CARDS CON IA*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.Card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin: 10px;
+   width: 250px;
+   transition: transform 0.3s ease;
+ }
+ 
+ .Card:hover {
+   transform: scale(1.05);
+ }
+ 
+ .Card button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: none;
+   border: none;
+   color: #333;
+   font-size: 16px;
+   cursor: pointer;
+   transition: color 0.3s ease;
+ }
+ 
+ .Card button:hover {
+   color: #ff4c4c;
+ }
+ 
+ .card-text h4,
+ .card-text h5,
+ .card-text h6 {
+   margin: 5px 0;
+   color: #333;
+ }
+ 
+ .cardimg {
+   margin-top: 20px;
+ }
+ 
+ .cardimg img {
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .cardimg a {
+   text-decoration: none;
+   color: #333;
+   transition: opacity 0.3s ease;
+ }
+ 
+ .cardimg a:hover {
+   opacity: 0.8;
+ }
+ 
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/*details con css*/
+
+.details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #333;
+   border-radius: 50%;
+   padding: 20px;
+   width: 300px;
+   height: 300px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   color: #fff;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+   
+ }
+ 
+ .details h3,
+ .details h4 {
+   margin: 5px 0;
+ }
+ 
+ .details img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin: 20px 0;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+ }
+ 
+ .details section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .details section h3,
+ .details section h4 {
+   margin: 5px 0;
+ }
+ 
+/*CSS NAV CON IA*/
+
+.Nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #333;
+   height: 50px;
+   padding: 0 20px;
+ }
+ 
+ .Nav button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   margin-right: 10px;
+ }
+ 
+ .Nav button a {
+   text-decoration: none;
+   color: #fff;
+   padding: 10px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .Nav button a:hover {
+   background-color: #555;
+ }
+ 
+ .SearchBar {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .SearchBar input {
+   padding: 5px;
+   border: none;
+   border-radius: 3px;
+   margin-right: 10px;
+ }
+ 
+ .SearchBar button {
+   background-color: #555;
+   color: #fff;
+   border: none;
+   padding: 8px 12px;
+   border-radius: 3px;
+   cursor: pointer;
+ }
+ 
+ .SearchBar button:hover {
+   background-color: #777;
+ }
+
+ 
+/*CSS SEARCH BAR CON IA*/
+
+.Search {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+ }
+ 
+ .Search input {
+   padding: 5px;
+   border: none;
+   border-radius: 3px;
+   margin-right: 10px;
+ }
+ 
+ .Search button {
+   background-color: #555;
+   color: #fff;
+   border: none;
+   padding: 8px 12px;
+   border-radius: 3px;
+   cursor: pointer;
+ }
+ 
+ .Search button:hover {
+   background-color: #777;
+ }
+ 
+
+ /*SECCION DETAIL CSS CON IA*/
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   text-align: center;
+   background-color: #222;
+   color: #fff;
+ }
+ 
+ .container h2 {
+   font-size: 30px;
+   margin-bottom: 10px;
+ }
+ 
+ .container h3 {
+   font-size: 24px;
+   margin-bottom: 5px;
+ }
+ 
+ .container p {
+   font-size: 18px;
+   margin-bottom: 20px;
+ }
+ 
+ .container img {
+   width: 200px;
+   height: auto;
+   border-radius: 50%;
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+   animation: rotate 4s linear infinite;
+ }
+ 
+ @keyframes rotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 

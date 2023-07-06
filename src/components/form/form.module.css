@@ -1,0 +1,47 @@
+.FormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .FormCard {
+    width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos adicionales según tus necesidades */
+  .FormCard form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .FormCard label {
+    margin-bottom: 5px;
+  }
+  
+  .FormCard input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .FormCard button {
+    background-color: darkgoldenrod;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .FormCard button:hover {
+    background-color: #ff4081;
+  }
+  
